@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" scaleShape="false" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="slovicka.FXMLDocumentController">
+   <children>
+      <GridPane alignment="CENTER" layoutY="6.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="nextBut" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#next" text="Next" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <TextField fx:id="pastSim" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="pastPar" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <TextField fx:id="czech" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button fx:id="checkBut" mnemonicParsing="false" onAction="#kontrola" text="Check" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <TextField fx:id="inf" GridPane.rowIndex="1" />
+            <Label text="Infinitiv" GridPane.halignment="CENTER" />
+            <Label text="Past Simple" GridPane.columnIndex="1" />
+            <Label text="Past Participle" GridPane.columnIndex="2" />
+            <Label text="Preklad" GridPane.columnIndex="3" />
+            <Label fx:id="vysledek" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
